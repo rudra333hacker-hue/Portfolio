@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECTS | G. PRANAV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">PRANAV_OS</div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="projects.html" style="color:var(--neon-cyan)">PROJECTS</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="about.html">BIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="container" style="padding: 120px 5% 50px;">
+        <h2 class="glitch" data-text="DEPLOYED_INNOVATIONS">DEPLOYED_INNOVATIONS</h2>
+        
+        <div class="project-grid">
+            <div class="project-card neon-border">
+                <div class="card-tag">WEB_APP</div>
+                <h3>MINI_SPOTIFY_v1</h3>
+                <p>Limited track music player with custom UI logic.</p>
+                <div class="tech-stack">HTML / CSS / JS</div>
+            </div>
+
+            <div class="project-card neon-border">
+                <div class="card-tag">BUSINESS</div>
+                <h3>IT_SOLUTIONS_PORTAL</h3>
+                <p>Full-scale webpage for service architecture and client onboarding.</p>
+                <div class="tech-stack">Frontend / UI-Design</div>
+            </div>
+
+            <div class="project-card neon-border">
+                <div class="card-tag">EDUCATION</div>
+                <h3>ACADEMIC_INTERFACE</h3>
+                <p>Responsive portal designed for institutional management.</p>
+                <div class="tech-stack">Responsive Design</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        gsap.from(".project-card", { 
+            duration: 1, 
+            opacity: 0, 
+            y: 30, 
+            stagger: 0.2, 
+            ease: "power2.out" 
+        });
+    </script>
+</body>
+</html>
