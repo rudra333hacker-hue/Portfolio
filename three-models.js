@@ -39,3 +39,8 @@ gsap.to(progress, {
         }});
     }
 });
+// ... existing progress bar code ...
+onComplete: () => {
+    // Add this line! It tells main.js to show the page.
+    window.dispatchEvent(new Event('modelsLoaded')); 
+}
